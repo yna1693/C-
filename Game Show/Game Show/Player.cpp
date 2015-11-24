@@ -1,21 +1,20 @@
 #include "Player.h"
 #include "SpinningWheel.h"
-#include <iostream>
 
 using namespace std;
 
-
+//Default constructor
 Player::Player() {
-	//initilize point to zero
+	//initilize points to zero
 	points = 0;
-}
+}//end default constructor
 
 void Player::spin(SpinningWheel &gameWheel) {
-	//add the points together 
+	//adds the points together from SpinningWheel spin function 
 	points += gameWheel.spin();
 }
 
 int Player::totalPoints() {
-	//return the total points
+	//returns the total points
 	return points;
 }

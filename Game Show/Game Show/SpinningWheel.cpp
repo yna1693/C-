@@ -1,6 +1,3 @@
-// Game.h.cpp : Defines the entry point for the console application.
-//
-
 #include "SpinningWheel.h"
 #include <iostream>
 #include <ctime>
@@ -12,36 +9,37 @@ using namespace std;
 SpinningWheel::SpinningWheel() {
 	
 	index = 0;			//set index to zero
-	srand(time(NULL));	//randomizetheseed
-	int temp;			//create a temp
+	srand(time(NULL));	//randomize the seed
+	int temp;			//creates temp 
 
-	//fillin the values array with the 5 increment
+	//fill in the values of the array with the 5 increment
 	for (int i = 0; i < NUM_VALUES; i++) {
 		values[i] = (i + 1) * 5;
 	}
 
-	//randomize the array by swapping randomly
+	//randomize the array using a randomized swap function
 	for (int i = 0; i < NUM_VALUES; i++) {
-		int randomIndex = rand() % NUM_VALUES;
+		int randomIndex = rand() % NUM_VALUES; // choose random index from 0-19
 		temp = values[i];
 		values[i] = values[randomIndex];
 		values[randomIndex] = temp;
 	}	
-}
+}// end default constructor
 
 //spin function
 int SpinningWheel::spin() {
 	//randomize the seed
 	srand(time(NULL));
 	
-	//set the position ofthe wheel from index
+	//sets the position of the wheel to the last known position
 	int current = index;
 	
-	//spin a random number
+	//chooes a random number from 22 to 42
 	int randomSpin = rand() % 20 + 22;
 	
 	//display the numbers that pass through during spin
 	for (int i = 0; i < randomSpin; i++) {
+		// resets current location at end of array
 		if (current % 20 == 0) {
 			current = 0;
 			cout << values[current] << " ";
@@ -52,10 +50,10 @@ int SpinningWheel::spin() {
 		current++;
 	}
 
-	//set the index up for the next spin
+	//sets the last index of spin as the beggining of the next spin
 	index = current;
 
-	//return the player spin result value
+	//returns the player spin result value
 	return values[index-1];
 }
 

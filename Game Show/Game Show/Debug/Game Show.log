@@ -1,15 +1,15 @@
-﻿Build started 10/13/2015 9:25:01 PM.
-     1>Project "c:\Users\yna16\documents\visual studio 2015\Projects\Game Show\Game Show\Game Show.vcxproj" on node 2 (Build target(s)).
+﻿Build started 10/13/2015 11:31:12 PM.
+     1>Project "C:\Users\yna16\Documents\Visual Studio 2015\Projects\Game Show\Game Show\Game Show.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt "Game Show.cpp"
          Game Show.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\yna16\documents\visual studio 2015\Projects\Game Show\Debug\Game Show.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"c:\users\yna16\documents\visual studio 2015\Projects\Game Show\Debug\Game Show.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\yna16\documents\visual studio 2015\Projects\Game Show\Debug\Game Show.lib" /MACHINE:X86 "Debug\Game Show.obj"
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\yna16\Documents\Visual Studio 2015\Projects\Game Show\Debug\Game Show.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\yna16\Documents\Visual Studio 2015\Projects\Game Show\Debug\Game Show.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\yna16\Documents\Visual Studio 2015\Projects\Game Show\Debug\Game Show.lib" /MACHINE:X86 "Debug\Game Show.obj"
          Debug\Player.obj
          Debug\SpinningWheel.obj
-         Game Show.vcxproj -> c:\users\yna16\documents\visual studio 2015\Projects\Game Show\Debug\Game Show.exe
-     1>Done Building Project "c:\Users\yna16\documents\visual studio 2015\Projects\Game Show\Game Show\Game Show.vcxproj" (Build target(s)).
+         Game Show.vcxproj -> C:\Users\yna16\Documents\Visual Studio 2015\Projects\Game Show\Debug\Game Show.exe
+     1>Done Building Project "C:\Users\yna16\Documents\Visual Studio 2015\Projects\Game Show\Game Show\Game Show.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.12
+Time Elapsed 00:00:03.10

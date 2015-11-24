@@ -3,9 +3,9 @@
 
 class SpinningWheel {
 	private:
-		static const int NUM_VALUES = 20;
-		int values[NUM_VALUES];
-		int index;
+		static const int NUM_VALUES = 20; // size of the array
+		int values[NUM_VALUES]; // the game wheel (array named value with a size of NUM_VALUES)
+		int index; // Stores the last know position of the wheel
 	
 	public:
 		SpinningWheel();
