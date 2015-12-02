@@ -21,15 +21,18 @@
     <ClCompile Include="Lab 4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ArrayQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ArrayQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="QueueInterface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QueueException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayQueue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

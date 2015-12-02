@@ -145,6 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ArrayQueue.cpp" />
     <ClCompile Include="Lab 4.cpp" />
   </ItemGroup>
   <ItemGroup>

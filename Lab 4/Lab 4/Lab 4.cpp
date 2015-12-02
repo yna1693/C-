@@ -2,7 +2,8 @@
 //
 
 #include <iostream>
-#include "ArrayQueue.h"
+#include"ArrayQueue.h"
+#include "ArrayQueue.cpp"
 
 using namespace std;
 
@@ -20,16 +21,26 @@ int main()
 
 		cin >> answer;
 
-		if (answer == 3) {
+		if (answer >= 3) {
 			break;
 		}
 		else if (answer == 1) {
 			cout << "Enter item to insert: ";
 			cin >> answer;
-			queue.enqueue(answer);
+			try {
+				queue.enqueue(answer);
+			}
+			catch (QueueException exception) {
+				cout << exception.what() << endl;
+			}
 		}
 		else if (answer == 2) {
-			queue.dequeue();
+			try {
+				queue.dequeue();
+			}
+			catch (QueueException exception) {
+				cout << exception.what() << endl;
+			}
 		}
 
 		queue.displayQueue();
