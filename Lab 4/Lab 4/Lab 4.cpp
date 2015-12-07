@@ -1,5 +1,5 @@
 // Lab 4.cpp : Defines the entry point for the console application.
-//
+//used Method 2 from http://www.codeproject.com/Articles/48575/How-to-define-a-template-class-in-a-h-file-and-imp because Method 3 won't compile!
 
 #include <iostream>
 #include"ArrayQueue.h"

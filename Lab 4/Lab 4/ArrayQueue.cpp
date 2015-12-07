@@ -47,6 +47,8 @@ template<class ItemType>
 void ArrayQueue<ItemType>::dequeue() {
 	if (isEmpty())
 		throw QueueException("Unable to remove item from empty queue");
+	else if (front == back)
+		items[front] = NULL;
 	else {
 		items[front] = NULL;
 		front = (front + 1) % MAX_QUEUE;
