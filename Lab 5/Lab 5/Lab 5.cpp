@@ -90,28 +90,30 @@ int main()
 {
 	string code;
 	string translatedCode;
+	vector<char> result;
 	//vector <char> inputCodeArray;
 
 	cout << "Please enter morse code to be translated: " << endl;
 
-	do {
-		cin >> code;
-	}
-
-	while (getline(cin, code) != NULL);
-	{
-		vector<char> input(code.begin(), code.end());
-		for (int i = 0; i < input.size(); i++) {
-			if (input [i] == '.' || input [i] == '-') 
-				translatedCode = decode(input);
-			else if(input [i] == -1)
-				break;
+	while (true) {
+		if (code == "x") {
+			break;
 		}
+
+		cin >> code;
+		vector<char> input(code.begin(), code.end());
+
+		result.push_back(decode(input));
+
 	}
-
-	cout << translatedCode << endl;
-
+	
+	
+	for (int i = 0; i < result.size(); i++) {
+		cout << result[i];
+	}
+	cout << endl;
 	system("pause");
+
 	return 0;
 }
 
