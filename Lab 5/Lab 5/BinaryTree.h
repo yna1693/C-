@@ -195,5 +195,6 @@ class BinaryTree {
 					  //   of a call to of getLeftSubtree or 
 					  //   getRightSubtree; else return false
 };
-    
+
+#include "BinaryTree.cpp"    
 #endif       

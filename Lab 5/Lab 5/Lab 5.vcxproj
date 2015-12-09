@@ -145,7 +145,6 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BinaryTree.cpp" />
     <ClCompile Include="Lab 5.cpp" />
     <ClCompile Include="UnsupportedOperationException.cpp" />
   </ItemGroup>
