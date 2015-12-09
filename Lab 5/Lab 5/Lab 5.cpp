@@ -64,17 +64,17 @@ BinaryTree<char> morse() {
 
 }
 
-char decode(vector<char> array) {
+char decode(vector<char> decodeArray) {
 	
 	BinaryTree<char> cur = morse();
 	
 
-	for (int i = 0; i < array.size(); i++) {
-		if (array[i] == '.') {
+	for (int i = 0; i < decodeArray.size(); i++) {
+		if (decodeArray[i] == '.') {
 			BinaryTree<char> left = cur.getLeftSubtree();
 			cur = left;
 		}
-		else if (array[i] == '-') {
+		else if (decodeArray[i] == '-') {
 			BinaryTree<char> right = cur.getRightSubtree();
 			cur = right;
 		}
@@ -89,12 +89,27 @@ char decode(vector<char> array) {
 int main()
 {
 	string code;
-	cin >> code;
-	vector<char> input(code.begin(),code.end());
+	string translatedCode;
+	//vector <char> inputCodeArray;
 
-	char result = decode(input);
+	cout << "Please enter morse code to be translated: " << endl;
 
-	cout << result << endl;
+	do {
+		cin >> code;
+	}
+
+	while (getline(cin, code) != NULL);
+	{
+		vector<char> input(code.begin(), code.end());
+		for (int i = 0; i < input.size(); i++) {
+			if (input [i] == '.' || input [i] == '-') 
+				translatedCode = decode(input);
+			else if(input [i] == -1)
+				break;
+		}
+	}
+
+	cout << translatedCode << endl;
 
 	system("pause");
 	return 0;
